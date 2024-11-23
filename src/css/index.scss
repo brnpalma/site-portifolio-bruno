@@ -1,0 +1,52 @@
+$purple: #ac2fbdec;
+$salmon: #e53ea8e7;
+$bg: #191919;
+$containerBg: #202020;
+
+@mixin screen($screen) {
+  @if $screen == md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $screen == lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $screen == xl {
+    @media screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg;
+  background-color: #5c5c5c;
+  background-color: #414141;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  padding: 2rem 1.6rem 4rem 1.6rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.defaultPadding {
+  padding: 1.6rem;
+  @include screen(md) {
+    padding: 2rem 2.4rem;
+  }
+}

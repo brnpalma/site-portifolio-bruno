@@ -1,0 +1,686 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore meu portfólio de programação full stack, onde mostro minha paixão por transformar ideias em soluções digitais inovadoras.
+    Descubra projetos criativos, demonstrando meu domínio em C#, Docker, DevOps, SQL, HTML, CSS, JavaScript entre outras. Conheça meu trabalho e entre em contato. Bruno Palma."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/originals/cd/76/d7/cd76d793c30eb1d8afdb9193ce0b8984.jpg"
+    />
+    <link rel="shortcut icon" href="./favicon-32x32.png" />
+    <title>Bruno Palma</title>
+    <script defer="defer" src="/static/js/main.46c82775.js"></script>
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div id="root">
+      <div class="App">
+        <div class="headerContainer">
+          <div class="container" style="opacity: 1; transform: none">
+            <header class="header defaultPadding">
+                <a href="#home" style="margin-right: 45px;"><img src="./asserts/brazil.png"></a>
+                <a href="#home" style="margin-right: 45px;"><img src="./asserts/eua.png"></a>
+              <nav class="nav">
+                <button
+                  aria-label="Button to close and open navbar"
+                  class="menu"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-menu"
+                  >
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                  </svg>
+                </button>
+                <ul class="ul">
+                  <div class="divider"></div>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#sobre">Sobre</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#portfolio">Portfólio</a></li>
+                  <li><a href="#contato">Contato</a></li>
+                </ul>
+              </nav>
+            </header>
+          </div>
+        </div>
+        <div
+          class="container"
+          id="bannerContainer"
+          style="opacity: 1; transform: none"
+        >
+          <article class="banner defaultPadding" id="home">
+            <div>
+              <div class="textContent">
+                <p>Olá, seja bem vindo. Sou <strong>Bruno Palma</strong></p>
+                <!-- <span>Desenvolvedor Full Stack</span> -->
+                <span>Desenvolvedor</span><span>Full Stack</span>
+              </div>
+              <a class="link" href="#contato">Entrar em Contato</a>
+              <div class="links">
+                <a
+                  href="https://github.com/brnpalma"
+                  target="_blank"
+                  style="margin-right: 8px"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVRoge2ZWUgVYRTHzXLNMjOyElrsoV1B08LqpQiMyjKiPX3ptQ16KqqHjF5C9KWShKyIknqKLI2ISoSisoIIW8g2WqQFs307/Q/fd2G4znTnzDf3DoQHfni545zz/8+d+e75zo2L643/MIgoCQwGOSALpAWtyTEgLh7MBDtBM3gK/lDPeAtaQTUoDdwUBGSDPeCFjVg30Q0Og6JYCx8C9oNvHoXbxXmQFwvxFeCdj8Kt8RNUgeRoCE8FR6IkPDzawFg/xWeAlhiJDwU/8NP9EJ8ObsVYfCi6QIGJ+ERwKSDxoXgDcrwaqA5YfCjugBSp+BKy/zIKKvZKxKeARy4Ts8nT4KVQ0GfQCB64/H9eYnPdGtgiENKqz+kLFoOH+v1uLe6Ghi/ID/AJ7AaD9HnLBLWa3IhPJtnVrA07n5u4PDZkkzsBpIe9N01Qi6MwkoFVwoSHIn+m/6w3W1ivPlLCJmHCZkMD+eCXoN5H0N8pWRqp+9Rt8IOVb2JA160U1ORY4JSoRJjoqKl4XZc3Pl8FdaucEm0XGij3w4Cu3Sqo2+KU5JjQQImPBiS1O52SXBEaKPPRgLRV79lakLzrXO+jAenql2WX5J4wSYOPBl4Ja4+0S3JdmOQL2V0JufhiYV2OTLtEFzwk4jFKvIF43nO0CWv+Bgl2yWo9GOBg49kexA/XF0AaHU4JNwmS3AWbSQ2xOL6Dk2A1yAWJNvl5MMCtwxpwglRn6iXOOhkoFCThfcAOUsOtjrBjvBj0uEdJjRjvexRtjW1OBrin/yA0wd3kFPBMv8dXtdSSsx9ZWmu8XueDAedpBQ7WCZPdBkn63IGW15PAGDCD1G0zEYzm4obin9C/Fg0cnOUh6UV9XiYYSmrjwvuKcaQ2LAWgCMwDkw0NVDqKt5i4ZliEha/Vf/m5ChlYRGYG+HtnmBsDCw0NjAflYBSpsXuhNrCE1ArlNWoiireYOGdQiH/UqCA1xeY9RrE2sAJM8JizE2RIDLCILg+FeLrMK88pUgMCnnDwyjMC1Otj0oWCY6Vr8RYTyz0U4q7yOWggdSvysvwaLAXHwWNSD70k6sTiLSZ2eTDhZ1wmk98LcHIfsC8g8TdJD8CMQpuI9SfBDeIAY/FhRspI1mp4CW5PasimGfTLBLcHjVES3w7mREW4jZH54KpPwnnV2kDRuuoRjHAPdBC8F4rm/cMZUkt1UsyF2xjhVnwq2AgOkPo+4LF6u/7LP1Xx6GQrmAtSg9bcG37FX9FNuyC/VXM0AAAAAElFTkSuQmCC"
+                    alt="Github logo" /></a
+                ><a
+                  href="https://www.linkedin.com/in/bruno-palma-oliveira?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADB0lEQVRoge2ZT4hNURzHx8j8lxnUFFHGzoIaTBaspJkyo5RMY2NpxyyUIlmMomiascAYCUUJu6EhC2Yi8n9hkhARYZA/hRE/359zr273/c6757x3z73vab71aWrOub/z/b533znnnltSMq7/UERUDqaCBlAPatL2pBXMlYKlYAe4AJ6D35SpUXAV9IBVqYeCgZlgF3gpmDXRF3AMNCVtfDo4AL7naFzSRbAgCfPrwfsYjQf1E3SDChfGq8BxR8bDugPmxmm+DgwnZN4X/+CXxGF+CribsHlfn8DCfMyXgcspmff1BjTkGqAnZfO+7oNKW/MtJC9GQfGs8ZDU/epae23MV4LHEQVvgFle/wlgA0UHzkf8Yc03DbDZoGCjcN05hwFYgybmK8Arg2J1wrX73Pr/q8VRAdYZFuoIXccz1og73/90NCrAoGEhnqM7QSOpH/wlV45D+gyqdeZrwFhCRvJRqy5Ai0WR1+BJiB9e25jQ5v+ueKYaIrWb3QPOkvo2bdStC7DdokibcP0Dr+2R0NZMamqWZq9acMhi7GFdgBMOAywib93QCe1HDMd+qysw5CqAiUjter8ajp+5tSC7Xad1APy/GmwBfWCNps9Jw/HrpYtt5nHbW4i3G+Gptl3ot9Fw/NlSgJsOA8wTagwI/doNx58mBbBZjGwDrBBq3BP6tRqM/QtMkgL0OQzQLNQYyTHA0wzz3sWdRRLgvC5AU5EE2KYLMBF8LIIA+tMKNB4u8ADPQGm2AMsKPMBOrflAkWsFGuAbmGESoM0gwBmwO8Q7r+2D0HZKqDEq9DudZczeSPOBEAMGIZIUh81cfbME4Dcrtg8aLtUR7TozxNq0XXvqtzYfCNGVsvkrlM/7AlLb4P0pmb8NanM2HwqR9DfBO+PJeZsPBVlN5luNXMWnFr2gLFbzgRBzyN0ZKJ90L3diXAiyElyPyfgLUo+Sbj71iCC8d+ontfraiA/BeLHkR8jyxI0LQXgrzmc/m8BBUmest0jdFvyXX1XxW86tpB4vq9L2PK649Ackz1Pov8EuZQAAAABJRU5ErkJggg=="
+                    alt="Linkedin logo"
+                /></a>
+              </div>
+            </div>
+            <!-- <div class="profilePicContainer"> -->
+              <img class="profilePic" src="./asserts/avatar.png" alt="avatar" width="260px"/>
+            <!-- </div> -->
+          </article>
+        </div>
+        <div
+          class="container"
+          id="containerSobre"
+          style="opacity: 1; transform: none"
+        >
+          <article id="sobre" class="defaultPadding">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFMklEQVR4nO2dS4gcVRiF23dQXKhBISsRRFE3IiIGRAjxkagBDYorMVkoBI1xk1lkMbqIxEVERJyFENCAaONiHIep6oc0aCQuBsWlj9EhxsdCTAgBTcZkPH+mgmObTtftvrf/7jnng0MnYVL3fqe7Hl1dU12pCCGEEEIIIYQQQggxKCYnJ6/M83wtsrVWq+1BPkAayEHka2SuLd8jn9Xr9bGpqanLveffL3T+1Wr1IgisQ3YXkguQWewxX6G4q72dQqD1bzabt2DCr0L4cB/C/wuW96G3Wxlo/e3Vjol+ElO6rYDTeFzj7dkJWn9smu6zTVwq8bYS1nn7tkPrb69GTOjdQYgvK2CDt/dZaP0XFxcvwGReQI4PUn5YCqD2bzQa12AiHw9afFgKoPaH/J2YxE9e8t4FUPsXR7jHPOU9C6D2x6BPYvAT3vJeBVD7Y9BNfZ7BGukCqP0x4L0Y8E9vaa8CqP3zPL8Zgx31Fm4PDsQelH9iWq3WKvt0ylu2wxpwl/wTg0EmvEU7yP9erVYvlX9CMNBGb9HzZEtSeXb/YtM3NwSi7TmOeW1LKi//M5u+lwYo9RfyOcbcV4w7hsdnkWeWB//+hJ1+TS7P7l9f+mQr6VseWz7yDv78gK1tyaUCYPe3Al5LKH4Sj3ubzeZ13p6doPbHq3F1PdFHm5D/MsuyW70dzwe7v+37Xk4kv2/oNnXngNp/fHz8Qkz2UIICXrELJ7z9usHub59xr08g/6a3V1nY/e3gZ3/kzd5HI/HKL6D2L35x4UjEAg5NT09f5e1VFnb/s5c4xXz1P+rtFAK7vx397oxYwKfePqGw+1sB07EKwNr0kLdPKOz+dgD0Q6RN38+2P/X2CYXa305QYPJ/RyrgDW+fUNj9bfN3W8T932PePqGw+1sB98cqIMuy6719QmH3t7dAmyMVcGLk9n8V+dsa8HSk/d9v3i69wO5vBWyLVMCct0svsPtbAdsjFfCtt0svsPvTF8DuH60A5Bdvl15g94+5BiwgV3j7hMLuH3MNsPPgm719QmH3j1qAXfg4au+F2f2jFlCU8Lq3Uwjs/tELKEp4e1T2h+z+SQooSvgV2W03T7RbpmL/eEM/sWv25T9CBSQq9WRt6e7Zb+HvG2dnZy+RP1EB5yhkHmvHU/1cfcvuP9IFLEut16tw2f1XSgG2NnyDxxvlT1pAUcI8cq38SQsocmBmZuYy+fMWYBmTP3EB9mteZW+nwu6/Igsoskv+3AV8IX/uAk6VOSJm91/JBdh1+vfIn7gA5HH5ExdQK3FXTXb/lV7AdvmrAPmrAPmrAPmrAPmrAPmrAPmrAPmrAPmrAPmrAPnTF8DuT18Auz99Aez+9AWw+9MXwO5PXwC7P30B7P70BbD70xfA7k9fALs/fQHs/vQFsPvTF8DuT18Auz99Aez+9AWw+1fyPN/qPdGE2SL/LthXnQ7BRJMEa8AG+XcBP3SH90RTBU/u7fLvQqvVuhglHPGebIL8YW7yLwF++P0hmHDU4El9r5S8/M9sBh/xnnDs4ODuYfkHgP90wHvSsYIn9GDoHbTZ/e1o+O56pK9Rd5ZfMJcgefkvgQXs8BaIUED3kx/y7wwWMOEt0Yf8RF/y8q9UbN+BhY0hp7yFAsRPI3v6+uYM+f8XLHgTFjrvLVciP9pRfDRx+f+L3XceC38Rg3w3BKLtsTntCLo3vvx7J8uym3B0+TwG3YvsR9BNrTGI2FjFmDb2czaXgUjLXwghhBBCCCGEEEIIIYQQQgghhBBCCDHU/AOG2qHtVzbvZQAAAABJRU5ErkJggg=="
+              alt="Quote"
+              class="quote"
+              style="opacity: 15%;"
+            />
+            <div>
+              <span>Sobre mim</span>
+              <p class="sobreText">
+                Sou desenvolvedor de software com experiência sólida em ASP.NET, C#, SQL Server e JavaScript. 
+                Tenho uma paixão por criar soluções web dinâmicas e responsivas, utilizando as últimas tendências em design e desenvolvimento. 
+                Ao longo da minha jornada, trabalhei com HTML, CSS e frameworks modernos, sempre focado em oferecer a melhor experiência para o usuário. 
+                Também tenho experiência em infraestrutura e automação residencial, com ênfase em plataformas como Home Assistant. 
+                Meu objetivo é continuar aprendendo e criando soluções que façam a diferença, buscando sempre a inovação e a eficiência em cada projeto.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div
+          class="container"
+          id="containerSkills"
+          style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+        >
+          <article id="skills" class="defaultPadding">
+            <span class="title">Skills</span>
+            <div class="tecs">
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                /><span>HTML</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                /><span>CSS</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JS"
+                /><span>JAVASCRIPT</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                  alt="SASS"
+                /><span>SASS</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TAILWIND"
+                /><span>TAILWIND</span>
+              </div>
+              <div>
+                <img
+                  src="/static/media/sc.086ad3368383b852b5f7.png"
+                  alt="STYLED-COMPONENTS"
+                /><span>STYLED-COMPONENTS</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="REACT"
+                /><span>REACT JS</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="GIT"
+                /><span>GIT</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GITHUB"
+                /><span>GITHUB</span>
+              </div>
+              <div>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                  alt="Firebase"
+                /><span>FIREBASE</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <section id="portfolio">
+          <span style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >Portfólio</span
+          >
+          <div class="projetos">
+            <div
+              class="container"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <article class="cardProjeto">
+                <figure>
+                  <img
+                    src="/static/media/secureauth2.15883440de548e9df4d9.png"
+                    alt="Imagem do projeto"
+                  /><button class="shadow">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="18"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="color: rgb(255, 255, 255)"
+                    >
+                      <path
+                        d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                      ></path>
+                      <path
+                        d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                      ></path></svg
+                    ><small>Ver imagens</small>
+                  </button>
+                </figure>
+                <div class="textContent">
+                  <div class="title">
+                    Secure Auth
+                    <div class="tecnologias">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="REACT"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase"
+                      /><img
+                        src="/static/media/sc.086ad3368383b852b5f7.png"
+                        alt="STYLED-COMPONENTS"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    Projeto full stack destinado a fornecer funcionalidades de
+                    autenticação de usuário. Permite que os usuários se
+                    autentiquem via e-mail e senha, bem como através de contas
+                    do Google e do GitHub. Além disso, os usuários podem
+                    selecionar um avatar ou carregar uma foto para usar como
+                    imagem de perfil e alterá-la mais tarde. O projeto foi
+                    desenvolvido para eu poder explorar as funcionalidades do
+                    Firebase.
+                  </p>
+                  <div class="links">
+                    <a
+                      href="https://secureauth.netlify.app/"
+                      class="verProjeto"
+                      target="_blank"
+                      >Ver Projeto</a
+                    ><a
+                      href="https://github.com/gbmouraa/secure_auth"
+                      class="verRepo"
+                      target="_blank"
+                      >&lt; Repositório /&gt;</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div
+              class="container"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <article class="cardProjeto">
+                <figure>
+                  <img
+                    src="/static/media/gm-solutions.713d0c644d909401b32a.png"
+                    alt="Imagem do projeto"
+                  /><button class="shadow">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="18"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="color: rgb(255, 255, 255)"
+                    >
+                      <path
+                        d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                      ></path>
+                      <path
+                        d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                      ></path></svg
+                    ><small>Ver imagens</small>
+                  </button>
+                </figure>
+                <div class="textContent">
+                  <div class="title">
+                    Sistema de chamados
+                    <div class="tecnologias">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="REACT"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                        alt="SASS"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    Projeto fullstack desenvolvido utilizando React e Firebase.
+                    O sistema é projetado para atender as necessidades da
+                    empresa ao gerenciar chamados de clientes, com suporte para
+                    diversos tipos de chamados, como suporte técnico, visita
+                    técnica e questões financeiras.
+                  </p>
+                  <div class="links">
+                    <a
+                      href="https://gm-solutions.netlify.app/"
+                      class="verProjeto"
+                      target="_blank"
+                      >Ver Projeto</a
+                    ><a
+                      href="https://github.com/gbmouraa/gm_sistema_de_chamados"
+                      class="verRepo"
+                      target="_blank"
+                      >&lt; Repositório /&gt;</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div
+              class="container"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <article class="cardProjeto">
+                <figure>
+                  <img
+                    src="/static/media/filme2.dbe98ae9d551f2f81619.png"
+                    alt="Imagem do projeto"
+                  /><button class="shadow">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="18"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="color: rgb(255, 255, 255)"
+                    >
+                      <path
+                        d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                      ></path>
+                      <path
+                        d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                      ></path></svg
+                    ><small>Ver imagens</small>
+                  </button>
+                </figure>
+                <div class="textContent">
+                  <div class="title">
+                    Catálogo de filmes
+                    <div class="tecnologias">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="REACT"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                        alt="SASS"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    Site de catálogo de filmes que utiliza a API do The Movie DB
+                    para exibir filmes. Possui paginação para visualizar mais
+                    filmes, autenticação de usuários, edição de
+                    perfil,funcionalidade de busca por filmes e a capacidade de
+                    adicionar e excluir filmes a uma lista de favoritos.
+                  </p>
+                  <div class="links">
+                    <a
+                      href="https://gbmoura-yourmovie.netlify.app/"
+                      class="verProjeto"
+                      target="_blank"
+                      >Ver Projeto</a
+                    ><a
+                      href="https://github.com/gbmouraa/catalogo_filmes"
+                      class="verRepo"
+                      target="_blank"
+                      >&lt; Repositório /&gt;</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div
+              class="container"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <article class="cardProjeto">
+                <figure>
+                  <img
+                    src="/static/media/restCountries.543403b88702af48b799.jpg"
+                    alt="Imagem do projeto"
+                  /><button class="shadow">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="18"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="color: rgb(255, 255, 255)"
+                    >
+                      <path
+                        d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                      ></path>
+                      <path
+                        d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                      ></path></svg
+                    ><small>Ver imagens</small>
+                  </button>
+                </figure>
+                <div class="textContent">
+                  <div class="title">
+                    Rest Countries API
+                    <div class="tecnologias">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="REACT"
+                      /><img
+                        src="/static/media/sc.086ad3368383b852b5f7.png"
+                        alt="STYLED-COMPONENTS"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    O principal objetivo deste projeto é fornecer aos usuários
+                    uma plataforma intuitiva e interativa para explorar
+                    informações detalhadas sobre países de todo o mundo. Ao
+                    oferecer funcionalidades como listagem, filtragem, pesquisa,
+                    navegação entre países vizinhos e paginação. Foi utilizado a
+                    API REST Countries para obter os dados.
+                  </p>
+                  <div class="links">
+                    <a
+                      href="https://devmoura-restcountries.netlify.app/"
+                      class="verProjeto"
+                      target="_blank"
+                      >Ver Projeto</a
+                    ><a
+                      href="https://github.com/gbmouraa/rest_countries_api"
+                      class="verRepo"
+                      target="_blank"
+                      >&lt; Repositório /&gt;</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div
+              class="container"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <article class="cardProjeto">
+                <figure>
+                  <img
+                    src="/static/media/form.efa1cf324405d542cf5b.jpg"
+                    alt="Imagem do projeto"
+                  /><button class="shadow">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      color="#fff"
+                      height="18"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="color: rgb(255, 255, 255)"
+                    >
+                      <path
+                        d="M400 421.3V154.7c0-23.5-19.2-42.7-42.7-42.7H90.7C67.2 112 48 131.2 48 154.7v266.7c0 23.5 19.2 42.7 42.7 42.7h266.7c23.4-.1 42.6-19.3 42.6-42.8zM157.3 304l45.3 64 66.7-96 88 128H90.7l66.6-96z"
+                      ></path>
+                      <path
+                        d="M421.3 48H154.7C131.2 48 112 67.2 112 90.7V96h261.3c23.5 0 42.7 19.2 42.7 42.7V400h5.3c23.5 0 42.7-19.2 42.7-42.7V90.7c0-23.5-19.2-42.7-42.7-42.7z"
+                      ></path></svg
+                    ><small>Ver imagens</small>
+                  </button>
+                </figure>
+                <div class="textContent">
+                  <div class="title">
+                    Multi Step Form
+                    <div class="tecnologias">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="REACT"
+                      /><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                        alt="TAILWIND"
+                      />
+                    </div>
+                  </div>
+                  <p class="description">
+                    Formulário de multiplas etapas, gerenciamento de estado
+                    feito com ContextApi, foi usado também o hookForm para fazer
+                    a validação do formulário de forma simplificada. Este é um
+                    projeto proposto pela plataforma FrondEnd Mentor.
+                  </p>
+                  <div class="links">
+                    <a
+                      href="https://gmoura-multi-step-form.netlify.app/"
+                      class="verProjeto"
+                      target="_blank"
+                      >Ver Projeto</a
+                    ><a
+                      href="https://github.com/gbmouraa/multi_step_form"
+                      class="verRepo"
+                      target="_blank"
+                      >&lt; Repositório /&gt;</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div
+              class="todos-projetos"
+              style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+            >
+              <a
+                href="https://github.com/gbmouraa"
+                target="_blank"
+                style="font-size: 16px"
+                >Ver todos projetos<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+        <div
+          class="container"
+          id="containerContato"
+          style="opacity: 0; transform: translateY(30px) translateZ(0px)"
+        >
+          <div id="contato" class="defaultPadding">
+            <span class="title">Contato</span>
+            <div class="content">
+              <div class="contatos">
+                <div class="itemContato">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-phone"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>(31) 9 9244-0246</span>
+                </div>
+                <div class="itemContato">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-mail"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                      <path
+                        d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>gabrielm.reis@outlook.com</span>
+                </div>
+                <div class="itemContato">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-map-pinned"
+                    >
+                      <path
+                        d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0"
+                      ></path>
+                      <circle cx="12" cy="8" r="2"></circle>
+                      <path
+                        d="M8.835 14H5a1 1 0 0 0-.9.7l-2 6c-.1.1-.1.2-.1.3 0 .6.4 1 1 1h18c.6 0 1-.4 1-1 0-.1 0-.2-.1-.3l-2-6a1 1 0 0 0-.9-.7h-3.835"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Sete Lagoas - MG - Brasil</span>
+                </div>
+              </div>
+              <div class="links">
+                <a
+                  href="https://github.com/gbmouraa"
+                  target="_blank"
+                  style="margin-right: 8px"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVRoge2ZWUgVYRTHzXLNMjOyElrsoV1B08LqpQiMyjKiPX3ptQ16KqqHjF5C9KWShKyIknqKLI2ISoSisoIIW8g2WqQFs307/Q/fd2G4znTnzDf3DoQHfni545zz/8+d+e75zo2L643/MIgoCQwGOSALpAWtyTEgLh7MBDtBM3gK/lDPeAtaQTUoDdwUBGSDPeCFjVg30Q0Og6JYCx8C9oNvHoXbxXmQFwvxFeCdj8Kt8RNUgeRoCE8FR6IkPDzawFg/xWeAlhiJDwU/8NP9EJ8ObsVYfCi6QIGJ+ERwKSDxoXgDcrwaqA5YfCjugBSp+BKy/zIKKvZKxKeARy4Ts8nT4KVQ0GfQCB64/H9eYnPdGtgiENKqz+kLFoOH+v1uLe6Ghi/ID/AJ7AaD9HnLBLWa3IhPJtnVrA07n5u4PDZkkzsBpIe9N01Qi6MwkoFVwoSHIn+m/6w3W1ivPlLCJmHCZkMD+eCXoN5H0N8pWRqp+9Rt8IOVb2JA160U1ORY4JSoRJjoqKl4XZc3Pl8FdaucEm0XGij3w4Cu3Sqo2+KU5JjQQImPBiS1O52SXBEaKPPRgLRV79lakLzrXO+jAenql2WX5J4wSYOPBl4Ja4+0S3JdmOQL2V0JufhiYV2OTLtEFzwk4jFKvIF43nO0CWv+Bgl2yWo9GOBg49kexA/XF0AaHU4JNwmS3AWbSQ2xOL6Dk2A1yAWJNvl5MMCtwxpwglRn6iXOOhkoFCThfcAOUsOtjrBjvBj0uEdJjRjvexRtjW1OBrin/yA0wd3kFPBMv8dXtdSSsx9ZWmu8XueDAedpBQ7WCZPdBkn63IGW15PAGDCD1G0zEYzm4obin9C/Fg0cnOUh6UV9XiYYSmrjwvuKcaQ2LAWgCMwDkw0NVDqKt5i4ZliEha/Vf/m5ChlYRGYG+HtnmBsDCw0NjAflYBSpsXuhNrCE1ArlNWoiireYOGdQiH/UqCA1xeY9RrE2sAJM8JizE2RIDLCILg+FeLrMK88pUgMCnnDwyjMC1Otj0oWCY6Vr8RYTyz0U4q7yOWggdSvysvwaLAXHwWNSD70k6sTiLSZ2eTDhZ1wmk98LcHIfsC8g8TdJD8CMQpuI9SfBDeIAY/FhRspI1mp4CW5PasimGfTLBLcHjVES3w7mREW4jZH54KpPwnnV2kDRuuoRjHAPdBC8F4rm/cMZUkt1UsyF2xjhVnwq2AgOkPo+4LF6u/7LP1Xx6GQrmAtSg9bcG37FX9FNuyC/VXM0AAAAAElFTkSuQmCC"
+                    alt="Github logo" /></a
+                ><a
+                  href="https://www.linkedin.com/in/gabriel-moura-b63382161/"
+                  target="_blank"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADB0lEQVRoge2ZT4hNURzHx8j8lxnUFFHGzoIaTBaspJkyo5RMY2NpxyyUIlmMomiascAYCUUJu6EhC2Yi8n9hkhARYZA/hRE/359zr273/c6757x3z73vab71aWrOub/z/b533znnnltSMq7/UERUDqaCBlAPatL2pBXMlYKlYAe4AJ6D35SpUXAV9IBVqYeCgZlgF3gpmDXRF3AMNCVtfDo4AL7naFzSRbAgCfPrwfsYjQf1E3SDChfGq8BxR8bDugPmxmm+DgwnZN4X/+CXxGF+CribsHlfn8DCfMyXgcspmff1BjTkGqAnZfO+7oNKW/MtJC9GQfGs8ZDU/epae23MV4LHEQVvgFle/wlgA0UHzkf8Yc03DbDZoGCjcN05hwFYgybmK8Arg2J1wrX73Pr/q8VRAdYZFuoIXccz1og73/90NCrAoGEhnqM7QSOpH/wlV45D+gyqdeZrwFhCRvJRqy5Ai0WR1+BJiB9e25jQ5v+ueKYaIrWb3QPOkvo2bdStC7DdokibcP0Dr+2R0NZMamqWZq9acMhi7GFdgBMOAywib93QCe1HDMd+qysw5CqAiUjter8ajp+5tSC7Xad1APy/GmwBfWCNps9Jw/HrpYtt5nHbW4i3G+Gptl3ot9Fw/NlSgJsOA8wTagwI/doNx58mBbBZjGwDrBBq3BP6tRqM/QtMkgL0OQzQLNQYyTHA0wzz3sWdRRLgvC5AU5EE2KYLMBF8LIIA+tMKNB4u8ADPQGm2AMsKPMBOrflAkWsFGuAbmGESoM0gwBmwO8Q7r+2D0HZKqDEq9DudZczeSPOBEAMGIZIUh81cfbME4Dcrtg8aLtUR7TozxNq0XXvqtzYfCNGVsvkrlM/7AlLb4P0pmb8NanM2HwqR9DfBO+PJeZsPBVlN5luNXMWnFr2gLFbzgRBzyN0ZKJ90L3diXAiyElyPyfgLUo+Sbj71iCC8d+ontfraiA/BeLHkR8jyxI0LQXgrzmc/m8BBUmest0jdFvyXX1XxW86tpB4vq9L2PK649Ackz1Pov8EuZQAAAABJRU5ErkJggg=="
+                    alt="Linkedin logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
